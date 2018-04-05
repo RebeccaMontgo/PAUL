@@ -1,14 +1,22 @@
 
 body, html {
-    height: 100%;
-    margin: 3px;
+    
+    margin: 0;
     font-family: Arial;
+}
+
+.top-container {
+    background-color: #003D75;
+    padding: 30px;
+    text-align: center;
+    color: white;
 }
 
 .tab {
     overflow: hidden;
-    border-bottom: none;
-    background-color: white;
+    border-bottom-color: white;
+    background-color: #003D75;
+    
 }
 
 
@@ -25,17 +33,13 @@ body, html {
     z-index:0;
 }
 
-
-
-
 .tab button:hover {
     background-color: #ddd;
 }
 
 .tab button.active {
     background-color: white;
-    z-index: 2;
-    border-bottom: white;
+    border-bottom-color: white;
 }
 
 .tabcontent {
@@ -45,5 +49,18 @@ body, html {
     border-top: none;
     height: 100%;
 }
+
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.sticky + .content{
+    padding-top: 102px;
+}
+
 
 

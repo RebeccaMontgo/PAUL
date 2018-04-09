@@ -1,0 +1,67 @@
+.tabs li { 
+  /* Makes a horizontal row */
+  float: left; 
+  font: Arial;
+  /* So the psueudo elements can be
+     abs. positioned inside */
+  position: relative; 
+}
+.tabs a { 
+  /* Make them block level
+     and only as wide as they need */
+  float: left; 
+  padding: 10px 40px; 
+  text-decoration: none;
+  
+  /* Default colors */ 
+  color: black;
+  background: #ccc; 
+  
+  /* Only round the top corners */
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; 
+}
+.tabs .active {
+  /* Highest, active tab is on top */
+  z-index: 3;
+}
+.tabs .active a { 
+  /* Colors when tab is active */
+  background: white; 
+  color: black; 
+}
+
+
+.tabs .active:before, .tabs .active:after {
+  background: white; 
+  
+  /* Squares below circles */
+
+}
+
+
+
+.tabs .active a:after, .tabs .active a:before {
+  background: #ccc;
+}
+/* First and last tabs have different
+   outside color needs */
+.tabs li:first-child.active a:before,
+.tabs li:last-child.active a:after {
+  background: #ccc;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.top-container {
+    background-color: #003D75;
+    padding: 50px;
+    text-align: center;
+    color: white;
+}

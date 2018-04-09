@@ -10,32 +10,32 @@ PAUL App. Developed by Rebecca Montgomery, James Gotwald, and Lloyd Leggett.
         
         <script src="js/functions.js" type="text/javascript"></script>
         <link rel="stylesheet" type="text/css" href="css/body.css">
+        <link rel="stylesheet" type="text/css" href="css/navbar.css">
+        
+      
+  
 
     </head>
     <body>
-    
         <div class="top-container">
             <h2>Welcome to the PAUL App</h2>
         </div>
-        <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
-            <button class="tablinks" onclick="openTab(event, 'Candidate')">Candidate</button>
-            <button class="tablinks" onclick="openTab(event, 'Interview')">Interview</button>
+        <div>
+            <ul class="tabs">
+                <li class="active"><a href="index.html">Home</a></li> 
+                <li class=""><a href="Candidate.html">Candidate</a></li>  
+                <li class=""><a href="Interview.html">Interview</a></li>  
+            </ul>
         </div>
-        
-        <div id="Home" class="tabcontent" style="display:block">
-            <h3>Welcome to the PAUL App</h3>
-            <p>Please wait for more info</p>
+        <p><p><p>
+        <div>
+            <h2>Welcome to the PAUL App</h2>
+            <h4>What would you like to do?</h4>
+            <p><a href="newcandidate.html">Add a New Candidate</a></p>
+            <p><a href="#">View a Candidate Profile</a></p>
+            <p><a href="#">Start an Interview</a></p>
+
         </div>
-        <div id="Candidate" class="tabcontent">
-            <h3>Welcome to the PAUL App</h3>
-            <p>Here you will see candidate profiles</p>
-        </div>
-        <div id="Interview" class="tabcontent">
-            <h3>Welcome to the PAUL App</h3>
-            <p>Do interviews here</p>
-        </div>
-        
     
-    </body>
+    </body> 
 </html>

@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
         <title>Enter a New Candidate</title>
@@ -15,14 +11,25 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="css/navbar.css">
     </head>
     <body>
-        <div id="nav-placeholder"></div>
+        <div class="top-container">
+            <h2>Welcome to the PAUL App</h2>
+            
+            <ul class="tabs">
+                <li class=""><a href="index.html">Home</a></li> 
+                <li class="active"><a href="Candidate.html">Candidate</a></li>  
+                <li class=""><a href="Interview.html">Interview</a></li>  
+            </ul>
+            
+        </div>
       
+        <h3>Add a New Candidate Here:</h3>
+        
         <form action="/submit.php">
                         
-            First Name: <input type="text" name="firstname"><br>
-            Last Name: <input type="text" name="lastname"><br>
-            Home Number: <input type="text" name="homenum"><br>
-            Cell Number: <input type="text" name="cellnum"><br>
+            First Name:<br><input type="text" name="firstname"><br>
+            Last Name: <br><input type="text" name="lastname"><br>
+            Home Number: <br><input type="text" name="homenum"><br>
+            Cell Number: <br><input type="text" name="cellnum"><br>
             
             <br><input type="submit" value="Add New Candidate">
         </form>

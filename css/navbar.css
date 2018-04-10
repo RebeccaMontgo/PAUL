@@ -1,14 +1,26 @@
+.tabs {
+    overflow: hidden;
+    background-color: #003D75;
+    position: relative;
+    width: 100%;
+}
+
 .tabs li { 
   /* Makes a horizontal row */
   float: left; 
   font: Arial;
+  margin: 0;
   /* So the psueudo elements can be
      abs. positioned inside */
   position: relative; 
+  list-style: none;
+  list-style-type: none;
+  padding: 0;
 }
 .tabs a { 
   /* Make them block level
      and only as wide as they need */
+
   float: left; 
   padding: 10px 40px; 
   text-decoration: none;
@@ -35,14 +47,22 @@
   color: black; 
 }
 
-
-.tabs .active:before, .tabs .active:after {
-  background: white; 
-  
-  /* Squares below circles */
-
+.tabs li:before, .tabs li:after, 
+.tabs li a:before, .tabs li a:after {
+  /* All pseudo elements are 
+     abs. positioned and on bottom */
+  position: relative;
+  bottom: 0;
 }
 
+
+
+.tabs .active:before, .tabs .active:after {
+  background: #003D75; 
+  
+  /* Squares below circles */
+  z-index: 1;
+}
 
 
 .tabs .active a:after, .tabs .active a:before {
@@ -52,16 +72,22 @@
    outside color needs */
 .tabs li:first-child.active a:before,
 .tabs li:last-child.active a:after {
-  background: #ccc;
+  background: #003D75;
 }
 
 ul{
+    position: relative;
+    float: left;
+    list-style: none;
     list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+    background-color: #003D75;
 }
 
 .top-container {
     background-color: #003D75;
-    padding: 50px;
+    padding: 30px;
     text-align: center;
     color: white;
 }
